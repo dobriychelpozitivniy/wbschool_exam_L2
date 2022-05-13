@@ -9,7 +9,13 @@ package main
 	2. Реализовать вспомогательные функции для парсинга и валидации параметров методов /create_event и /update_event.
 	3. Реализовать HTTP обработчики для каждого из методов API, используя вспомогательные функции и объекты доменной области.
 	4. Реализовать middleware для логирования запросов
-Методы API: POST /create_event POST /update_event POST /delete_event GET /events_for_day GET /events_for_week GET /events_for_month
+Методы API:
+POST /create_event
+POST /update_event
+POST /delete_event
+GET /events_for_day
+GET /events_for_week
+GET /events_for_month
 Параметры передаются в виде www-url-form-encoded (т.е. обычные user_id=3&date=2019-09-09).
 В GET методах параметры передаются через queryString, в POST через тело запроса.
 В результате каждого запроса должен возвращаться JSON документ содержащий либо {"result": "..."} в случае успешного выполнения метода,
